@@ -3187,7 +3187,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .s-header {
 	--header-height: 80px;
-	--logo-width   : 9.6rem;
+	--logo-width   : 16.6rem;
 	--box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.02),
 		             0 2px 2px rgba(0, 0, 0, 0.02),
 		             0 4px 4px rgba(0, 0, 0, 0.02),
@@ -3200,8 +3200,8 @@ td:last-child {
 	background-color: transparent;
 	height          : var(--header-height);
 	width           : 100%;
-	position        : absolute;
-	top             : var(--vspace-0_75);
+	position        : fixed;
+	background-color: #000000;
 	left            : 0;
 }
 
@@ -3221,7 +3221,7 @@ td:last-child {
  * -------------------------------------------------------------------- */
 .s-header__logo {
 	z-index    : 3;
-	line-height: 1;
+	line-height: 2.5;
 	transform  : translate(0.3rem, -0.2em);
 }
 
@@ -3368,8 +3368,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
 	.s-header {
-		--logo-width: 10rem;
-		top         : var(--vspace-0_25);
+		--logo-width: 14rem;
 	}
 
 	.s-header__inner {
@@ -3575,7 +3574,7 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-	--content-padding-top   : max(20rem, 18vh);
+	--content-padding-top   : max(10rem, 18vh);
 	--content-padding-bottom: 10.8rem;
 	--content-min-height    : calc(var(--vspace-1) * 27);
 	z-index                 : 2;
