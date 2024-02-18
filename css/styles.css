@@ -3254,7 +3254,7 @@ td:last-child {
 	list-style: none;
 	display   : inline-flex;
 	flex-flow : row nowrap;
-	margin    : 0 4rem 0 70%;
+	margin    : 0 4rem 0 61%;
 	padding   : 0;
 }
 
@@ -3366,6 +3366,17 @@ td:last-child {
  * responsive:
  * site-header
  * ------------------------------------------------------------------- */
+ @media screen and (max-width: 1360px) {
+	.s-header__menu-links {
+		margin    : 0 4rem 0 41%;
+	}
+ }
+
+ @media screen and (max-width: 1010px) {
+	.s-header__menu-links {
+		margin    : 0 4rem 0 30%;
+	}
+ }
 @media screen and (max-width: 900px) {
 	.s-header {
 		--logo-width: 18rem;
@@ -3972,15 +3983,6 @@ td:last-child {
 	grid-row    : 1/span 1;
 }
 
-.s-about__content-imgbgg {
-	aspect-ratio: 1/1;
-	width       : 85vw;
-	margin      : -10% 0 0 0;
-	opacity     : 0.6;
-	grid-column : 1/span 5;
-	grid-row    : 1/span 1;
-}
-
 .s-about__content-main .attention-getter,
 .s-about__content-main .lead {
 	font-weight: 300;
@@ -4029,6 +4031,11 @@ td:last-child {
 .s-expertise {
 	padding-top   : var(--vspace-6);
 	padding-bottom: var(--vspace-5);
+	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(/cables.png);
+	background-position: 80%;
+	background-size: cover;
+	z-index: -1;
 }
 
 .s-expertise__content-main {
@@ -4042,6 +4049,7 @@ td:last-child {
 @media screen and (max-width: 800px) {
 	.s-expertise {
 		padding-top: var(--vspace-5);
+		background-position: 70%;
 	}
 }
 
