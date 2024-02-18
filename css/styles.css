@@ -3187,7 +3187,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .s-header {
 	--header-height: 80px;
-	--logo-width   : 16.6rem;
+	--logo-width   : 20.6rem;
 	--box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.02),
 		             0 2px 2px rgba(0, 0, 0, 0.02),
 		             0 4px 4px rgba(0, 0, 0, 0.02),
@@ -3221,7 +3221,7 @@ td:last-child {
  * -------------------------------------------------------------------- */
 .s-header__logo {
 	z-index    : 3;
-	line-height: 2.5;
+	line-height: 3;
 	transform  : translate(0.3rem, -0.2em);
 }
 
@@ -3254,7 +3254,7 @@ td:last-child {
 	list-style: none;
 	display   : inline-flex;
 	flex-flow : row nowrap;
-	margin    : 0 4rem 0 0;
+	margin    : 0 4rem 0 70%;
 	padding   : 0;
 }
 
@@ -3266,7 +3266,7 @@ td:last-child {
 	display            : block;
 	font-family        : var(--font-1);
 	font-weight        : 400;
-	font-size          : 1.6rem;
+	font-size          : 1.9rem;
 	line-height        : var(--vspace-1);
 	color              : var(--color-2-lightest);
 	padding            : 0 1.2rem;
@@ -3368,7 +3368,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
 	.s-header {
-		--logo-width: 14rem;
+		--logo-width: 18rem;
 	}
 
 	.s-header__inner {
@@ -3613,6 +3613,7 @@ td:last-child {
 .s-intro__content-pretitle {
 	margin-bottom: var(--vspace-0_125);
 	padding-left : 10rem;
+	font-size:  5rem;
 	color        : var(--color-3);
 	transform    : translate(-9.6rem, 0);
 	position     : relative;
@@ -3632,7 +3633,6 @@ td:last-child {
 .s-intro__content-title {
 	font-size    : clamp(5rem, 7vw, 11.6rem);
 	line-height  : 1;
-	margin-top   : 0;
 	margin-bottom: var(--vspace-1_25);
 	color        : var(--color-3);
 }
@@ -3646,6 +3646,7 @@ td:last-child {
 
 .s-intro__content-media-inner {
 	position: relative;
+	
 }
 
 .s-intro__content-media img {
@@ -3654,6 +3655,7 @@ td:last-child {
 	margin        : 0;
 	-o-object-fit : cover;
 	object-fit    : cover;
+
 	aspect-ratio  : 2/2.5;
 	vertical-align: bottom;
 	box-shadow    : 0 60px 40px -40px rgba(0, 0, 0, 0.2);
@@ -3922,6 +3924,7 @@ td:last-child {
 @media screen and (max-width: 560px) {
 	.s-intro__content-pretitle {
 		padding-left: 9.6rem;
+		font-size: 3.3rem;
 	}
 
 	.s-intro__content-pretitle::before {
@@ -3965,6 +3968,15 @@ td:last-child {
 	transform   : translate(-40%, 0);
 	margin      : -20% 0 0 0;
 	opacity     : 0.25;
+	grid-column : 1/span 5;
+	grid-row    : 1/span 1;
+}
+
+.s-about__content-imgbgg {
+	aspect-ratio: 1/1;
+	width       : 85vw;
+	margin      : -10% 0 0 0;
+	opacity     : 0.6;
 	grid-column : 1/span 5;
 	grid-row    : 1/span 1;
 }
