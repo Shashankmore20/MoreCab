@@ -1,5 +1,5 @@
 /* ===================================================================
- * Monica 1.0.0 - Main JS
+ * MoreCab 1.0.0 - Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -10,7 +10,6 @@
     const cfg = {
 
         // MailChimp URL
-        mailChimpURL : 'https://facebook.us1.list-manage.com/subscribe/post?u=1abf75f6981256963a47d197a&amp;id=37c6d8f4d6' 
 
     };
 
